@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="SUNCLUB summer fashion, sunglasses and live weather-inspired style.">
+  <title>SUNCLUB — Your weather. Your style.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mood-day">
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="SUNCLUB home">SUNCLUB<span>®</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#collection">SHOP</a><a href="#weather">LIVE WEATHER</a><a href="#about">ABOUT</a>
+    </nav>
+    <a class="header-cta" href="#collection">GET IN THE SUN <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-sticker">SUMMER<br>ALL YEAR<br>ROUND ✳</div>
+      <p class="eyebrow">INDEPENDENT SUMMER CLUB · EST. 2026</p>
+      <h1>SUN'S OUT.<br><span>STYLE'S ON.</span></h1>
+      <p class="hero-copy">A little extra colour. A little more sunshine. Meet your new favourite summer mood.</p>
+      <a class="pill-button" href="#collection">DISCOVER THE DROP <span>↘</span></a>
+      <div class="hero-art" role="img" aria-label="Abstract colourful sunglasses-inspired shapes">
+        <div class="sun-disc"></div><div class="lens lens-left"></div><div class="lens lens-right"></div>
+        <div class="bridge"></div><div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+        <span class="art-note">GOOD<br>VIBRATIONS<br>ONLY</span>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO FEEL THE SUN</span><span>01 / 04</span></div>
+    </section>
+
+    <section class="weather-section" id="weather">
+      <div class="section-top"><span class="eyebrow">THE SUN RIGHT NOW</span><span class="live-dot">● LIVE DATA</span></div>
+      <div class="weather-grid">
+        <div class="weather-intro">
+          <p class="weather-city">CURRENT CONDITIONS · HAMBURG</p>
+          <p class="weather-kicker" id="mood-label">CHECKING THE SKY…</p>
+          <h2 id="mood-title">FIND YOUR<br>WEATHER MOOD.</h2>
+          <p id="mood-copy">Fresh weather data is loading. Your style inspiration is on its way.</p>
+          <p class="status" id="weather-status" role="status" aria-live="polite">Loading fresh weather data…</p>
+          <button class="text-button" id="refresh-weather" type="button">REFRESH DATA ↻</button>
+        </div>
+        <div class="weather-numbers">
+          <div class="main-temp"><span id="temperature">—</span><small>OUTSIDE RIGHT NOW</small></div>
+          <div class="weather-stat"><span>UV INDEX</span><strong id="uv-index">—</strong></div>
+          <div class="weather-stat"><span>WIND</span><strong id="wind">—</strong></div>
+          <div class="weather-stat"><span>PRECIPITATION</span><strong id="precipitation">—</strong></div>
+          <p class="updated" id="weather-time">Waiting for live update…</p>
+        </div>
+      </div>
+      <p class="weather-note">UV index is an indicator of solar UV intensity. Sunglasses are a style accessory, not a substitute for suitable UV protection.</p>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="collection-heading"><p class="eyebrow">THE GOOD STUFF</p><h2>FIND YOUR<br><em>SUMMER LOOK.</em></h2><span class="scribble">✳</span></div>
+      <div class="product-grid">
+        <article class="product-card card-orange"><div class="product-art glasses-art"><i></i><b></b></div><span>01 / EYE CANDY</span><h3>THE SUNGLASSES</h3><p>Big frames. Bold energy.</p></article>
+        <article class="product-card card-pink"><div class="product-art bag-art"><i></i><b></b></div><span>02 / TAKE IT OUT</span><h3>THE BEACH BAGS</h3><p>Carry your own sunshine.</p></article>
+        <article class="product-card card-blue"><div class="product-art shirt-art"><i></i><b></b></div><span>03 / OFF DUTY</span><h3>THE SUMMERWEAR</h3><p>Made for long, bright days.</p></article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="eyebrow">A STATE OF SUN</p><h2>NOT JUST AN<br>ACCESSORY.<br><span>A WHOLE MOOD.</span></h2>
+      <p>We believe summer is more than a season. It’s a state of mind. SUNCLUB brings playful colour, confident shapes and everyday sunshine energy into your wardrobe.</p>
+      <a class="pill-button dark-button" href="#weather">CHECK TODAY'S MOOD ↗</a>
+      <div class="manifesto-stamp">JOIN<br>THE<br>CLUB!</div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">SUNCLUB<span>®</span></a>
+    <p>YOUR WEATHER. YOUR STYLE.</p>
+    <p class="small-print">Studienprojekt der Kunstschule Wandsbek, keine offizielle Seite.</p>
+    <p class="small-print">Weather data: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, CC BY 4.0. Data is retrieved live from the Open-Meteo API.</p>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
